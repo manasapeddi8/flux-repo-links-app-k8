@@ -1,0 +1,12 @@
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: fluxcd-app
+  namespace: default
+  annotations:
+    fluxcd.io/automated: "true"
+spec:
+  releaseName: fluxcd-app
+  targetNamespace: fluxcd-app
+  chart:
+    git: git@github.com:manasapeddi8/flux-repo-links-app-k8.git
