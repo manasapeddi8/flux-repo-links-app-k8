@@ -10,3 +10,4 @@ spec:
   targetNamespace: fluxcd-app
   chart:
     git: git@github.com:manasapeddi8/flux-repo-links-app-k8.git
+    ref: main
